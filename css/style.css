@@ -10,11 +10,11 @@
         table{
             border-collapse : collapse;
         }
-        header ul {
-            list-style:none;
-        }
-         
-        header li {
-            float: left;
+        nav {
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 50px;
         }
 
