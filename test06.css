@@ -1,0 +1,32 @@
+body{
+    color: black;
+}
+
+a{
+    color: rgb(101, 146, 108);
+    text-decoration: none;
+    border: 1px solid rgb(101, 146, 108);
+    /* 너비는 텍스트의 너비로 인라인 요소는 크기 값을 가질 수 없다. 따라서 아래 같이 주어도 변화없다. */
+    width: 300px;
+    height: 200px;
+    /* 인라인 요소는 마진을 주면 상하좌우가 적용되지 않고 상하만 적용된다 */
+    margin: 50px;
+    /* 가로배치, 크기 조절 불가, 상하마진X 좌우마진O */
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+div{
+    border: 1pc solid rgb(101, 146, 108);
+    height: 100px;
+    margin: 50px;
+}
+
+img{
+    border: 1px solid rgb(101, 146, 108);;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+}
+
