@@ -12,7 +12,8 @@
 
     <link href="submenu.css" rel="stylesheet">
 
-    <title>Hello, modularity!</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <title></title>
 
   </head>
 
@@ -26,7 +27,7 @@
 
           <a class="navbar-brand" href="#">Navbar</a>
 
-          <button class="navbar-toggler" type="button" >
+          <button class="navbar-toggler" type="button">
 
             <span class="navbar-toggler-icon"></span>
 
@@ -54,7 +55,43 @@
 
     </ul>
 
+    <p class="hello">안녕하세요</p>
+    <p class="hello">안녕하세요</p>
+    <p class="hello">안녕하세요</p>
+
+    <button id="test-btn">텍스트지움</button>
+    <button id="test-btn1">텍스트보임</button>
+    <script>
+
+      // document.querySelector('.hello').innerHTML = '반갑습니다'
+      // $('.hello').html('반갑습니다')
+      // $('.hello').css('color', 'red')
+      // $('.hello').addClass('show')
+
+      //document.querySelectorAll('.hello').innerHTML = '반갑습니다'
+      
+      // document.querySelector('#test-btn').addEventListener('click', function(){
+      //     document.querySelectorAll('.hello')[0].style.display = 'none'
+      //     document.querySelectorAll('.hello')[1].style.display = 'none'
+      //     document.querySelectorAll('.hello')[2].style.display = 'none'
+      // })
+
+      $('#test-btn').on('click', function(){
+        //$('.hello').css('display', 'none')
+        //$('.hello').hide() //hide나 none이나 같음
+        $('.hello').slideUp()
+      })
+
+      $('#test-btn1').on('click', function(){
+        $('.hello').slideDown()
+      })
+      //document.querySelector(#test-btn)
+      document.getElementsByClassName('navbar-toggler')[0].addEventListener('click', function() {
+          //document.getElementsByClassName('list-group')[0].classList.add('show');
+          document.getElementsByClassName('list-group')[0].classList.toggle('show');
+      })
+    </script>
+    
   </body>
 
 </html>
-
